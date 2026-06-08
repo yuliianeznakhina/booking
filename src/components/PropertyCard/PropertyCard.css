@@ -1,0 +1,4 @@
+.PropertyCard {
+    display: flex;
+    flex-direction: column;
+}
