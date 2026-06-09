@@ -1,1 +1,22 @@
-.Header {}
+@property --blue-color {
+  syntax: "<color>";
+  initial-value: #1C28CC;
+  inherits: true;
+}
+@property --gray-stroke {
+  syntax: "<color>";
+  initial-value: #848484;
+  inherits: true;
+}
+
+.Header {
+    background-color: #ffffff;
+}
+
+.appBTN {
+    background-color: #ffffff;
+    border: 1px solid var(--gray-stroke);
+    border-radius: 20px;
+    padding: 12px 40px;
+    color: var(--blue-color);
+}
