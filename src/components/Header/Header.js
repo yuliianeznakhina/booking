@@ -15,6 +15,13 @@ export function Header() {
       {countries.map(elem=><option value={elem.name}><img src={elem.image}/></option>)}
     </select>
     <button className='appBTN'>Open app<img src='./images/icons/open-app.png'/></button>
+  <nav>
+    <a>Trip Boards</a>
+    <a>List your property</a>
+    <a>Help</a>
+    <a>My trips</a>
+  </nav>
+  <button className='signInBTN'>Sign in</button>
   </header>
   );
 }
