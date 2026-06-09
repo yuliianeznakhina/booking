@@ -17,10 +17,10 @@ export function Header() {
 
   return (<header className="Header">
     <div id='countrySelect'>
-      <div className='countrySelected' onClick={() => setOpen(!open)}> <img src={selected.image} />{selected.name}<img src='./images/icons/arrow-down.png'/></div>
+      <div className='countrySelected' onClick={() => setOpen(!open)}> <img src={selected.image} />{selected.name}<img className={'dropdownArrow' + (open ? ' open' : '')} src='./images/icons/arrow-down.png' /></div>
       {open && (
-        <div className='countryOption'>
-          {countries.map((country) => (<div
+        <div className='countryDropdown'>
+          {countries.map((country) => (<div className={'countryOption' + (selected.name == country.name ? ' selected' : '')}
             onClick={() => {
               setSelected(country);
               setOpen(false);
