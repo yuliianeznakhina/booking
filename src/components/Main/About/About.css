@@ -1,6 +1,7 @@
 .AboutInformation {
     background-image: url(../../../../public/images/about-image.png);
     padding: 8.75rem;
+    background-size: 100% 100%;
 }
 
 .About h2 {

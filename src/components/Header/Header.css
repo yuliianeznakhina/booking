@@ -64,17 +64,14 @@
 }
 
 .appBTN {
-  background-color: #ffffff;
   border: 0.0625rem solid var(--gray-stroke);
   border-radius: 1.25rem;
   padding: 0.75rem 2.5rem;
   color: #205BE3;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.25rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  cursor: pointer;
 }
 
 .appBTN:hover {
@@ -82,17 +79,19 @@
   border: 0.0625rem solid #00000000;
 }
 
-.signInBTN {
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
-  background-color: inherit;
+.Header .signInBTN {
   border: 0.0625rem solid var(--gray-stroke);
-  padding: 0.4375rem 1.6875em;
-  border-radius: 0.625rem;
-  cursor: pointer;
 }
 
-.signInBTN:hover {
-  background-color: var(--blue-color-hover);
-  border: 0.0625rem solid #00000000;
+.signInDropdown {
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem 1.375rem;
+}
+
+.signInDropdown h4 {
+  font-family: "Inter", sans-serif;
+  padding: 0.35em 1.35em;
 }

@@ -13,17 +13,18 @@ export function Header() {
   ]
 
   const [selected, setSelected] = useState(countries[0]);
-  const [open, setOpen] = useState(false);
+  const [countryOpen, setCountryOpen] = useState(false);
+  const [signInOpen, setSignInOpen] = useState(false);
 
   return (<header className="Header">
     <div id='countrySelect'>
-      <div className='countrySelected' onClick={() => setOpen(!open)}> <img src={selected.image} />{selected.name}<img className={'dropdownArrow' + (open ? ' open' : '')} src='./images/icons/arrow-down.png' /></div>
-      {open && (
+      <div className='countrySelected' onClick={() => setCountryOpen(!countryOpen)}> <img src={selected.image} />{selected.name}<img className={'dropdownArrow' + (countryOpen ? ' open' : '')} src='./images/icons/arrow-down.png' /></div>
+      {countryOpen && (
         <div className='countryDropdown'>
           {countries.map((country) => (<div className={'countryOption' + (selected.name == country.name ? ' selected' : '')}
             onClick={() => {
               setSelected(country);
-              setOpen(false);
+              setCountryOpen(false);
             }}>
             <img src={country.image} />
           </div>))}
@@ -36,7 +37,17 @@ export function Header() {
       <a>Help</a>
       <a>My trips</a>
     </nav>
-    <button className='signInBTN'>Sign in</button>
+    <div className='signIn'>
+      <button className='signInBTN' onClick={() => setSignInOpen(!signInOpen)}>Sign in</button>
+      {signInOpen && (
+        <div className='signInDropdown'>
+          <h4>Sign in to contact hosts and keep
+            track of all your messages</h4>
+          <button className='signInBTN'>Sign in</button>
+          <button className='signInBTN'>Sign in as an owner</button>
+          <button className='signInBTN learnMore'>Learn more about One Key</button>
+        </div>)}
+    </div>
   </header>
   );
 }

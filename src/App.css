@@ -37,3 +37,22 @@ html {
   font-style: normal;
   font-size: 1.25rem;
 }
+
+button {
+  font-size: 1.25rem;
+  background-color: inherit;
+  border: 0.0625rem solid #00000000;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.signInBTN {
+  font-family: "Inter", sans-serif;
+  padding: 0.35em 1.35em;
+  border-radius: 0.625rem;
+}
+
+.signInBTN:hover {
+  background-color: var(--blue-color-hover);
+  border: 0.0625rem solid #00000000;
+}

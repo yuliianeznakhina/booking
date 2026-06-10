@@ -1,0 +1,23 @@
+.SignInBanner {
+    background-color: #C7D2FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem;
+    border-radius: 1.25rem;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.SignInBanner h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin: 0 16.875rem;
+}
+
+.SignInBanner .signInBTN {
+    background-color: #000080;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 2.1875rem;
+}
