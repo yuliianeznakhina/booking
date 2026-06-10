@@ -9,9 +9,8 @@ export const LayoutContext = createContext();
 export const SelectedFilterContext = createContext();
 
 function App() {
-  const [signIn, setSignIn] = useState(false);
-
-  return (<LayoutContext.Provider value={{ signIn, setSignIn }}>
+  
+  return (
     <Router className="App">
       <Header />
 
@@ -23,7 +22,6 @@ function App() {
 
       {/* <Footer /> */}
     </Router>
-  </LayoutContext.Provider>
   );
 }
 

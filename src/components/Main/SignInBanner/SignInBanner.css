@@ -3,15 +3,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.75rem;
+    padding: 1.75rem 2.5rem;
     border-radius: 1.25rem;
     font-family: "IBM Plex Sans", sans-serif;
+}
+
+.bannerWrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 2.375rem;
+}
+
+.SignInBanner img {
+    width: 8.75rem;
 }
 
 .SignInBanner h3 {
     font-size: 1.875rem;
     font-weight: 600;
-    margin: 0 16.875rem;
+    margin: 0;
 }
 
 .SignInBanner .signInBTN {
@@ -19,5 +29,5 @@
     color: #ffffff;
     font-size: 2rem;
     font-weight: 500;
-    margin: 0 2.1875rem;
+    margin: 0 1.5rem;
 }
