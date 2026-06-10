@@ -1,8 +1,9 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-export function Header() {
+export function Header(props) {
   const countries = [
     { image: './images/icons/flag-UA.png', name: 'UA' },
     { image: './images/icons/flag-USA.png', name: 'USA' },
@@ -37,17 +38,17 @@ export function Header() {
       <a>Help</a>
       <a>My trips</a>
     </nav>
-    {/* <div className='signIn'> */}
+    <div className='signIn'>
       <button className='signInBTN' onClick={() => setSignInOpen(!signInOpen)}>Sign in</button>
       {signInOpen && (
         <div className='signInDropdown'>
           <h4>Sign in to contact hosts and keep
             track of all your messages</h4>
-          <button className='signInBTN'>Sign in</button>
-          <button className='signInBTN'>Sign in as an owner</button>
-          <button className='signInBTN learnMore'>Learn more about One Key</button>
+          <Link className='signInBTN' to="/Signin">Sign in</Link>
+          <Link className='signInBTN' to="/Signin">Sign in as an owner</Link>
+          <Link className='signInBTN learnMore' to="/">Learn more about One Key</Link>
         </div>)}
-    {/* </div> */}
+    </div>
   </header>
   );
 }
