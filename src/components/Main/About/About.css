@@ -5,16 +5,13 @@
 }
 
 .About h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 500;
-    margin: 2.75rem;
+    margin: 2.75rem 0;
 }
 
 .AboutInformation ul {
     background-color: #FFFFFFb3;
     list-style-type: none;
-    padding: 2.5rem 1.375rem 2.5rem 2.5rem ;
+    padding: 2.5rem 1.375rem 2.5rem 2.5rem;
     width: 42.5rem;
     box-sizing: border-box;
     display: flex;

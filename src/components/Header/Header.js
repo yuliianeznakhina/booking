@@ -17,7 +17,13 @@ export function Header(props) {
   const [countryOpen, setCountryOpen] = useState(false);
   const [signInOpen, setSignInOpen] = useState(false);
 
-  return (<header className="Header">
+  window.onclick = function (event) {
+    if (event.target == document.querySelector('.signInDropdown')) {
+      setSignInOpen(false)
+    }
+  }
+
+  return (<header className={"Header" + (signIn ? ' hide' : '')}>
     <div id='countrySelect'>
       <div className='countrySelected' onClick={() => setCountryOpen(!countryOpen)}> <img src={selected.image} />{selected.name}<img className={'dropdownArrow' + (countryOpen ? ' open' : '')} src='./images/icons/arrow-down.png' /></div>
       {countryOpen && (
