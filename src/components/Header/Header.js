@@ -37,7 +37,7 @@ export function Header() {
       <a>Help</a>
       <a>My trips</a>
     </nav>
-    <div className='signIn'>
+    {/* <div className='signIn'> */}
       <button className='signInBTN' onClick={() => setSignInOpen(!signInOpen)}>Sign in</button>
       {signInOpen && (
         <div className='signInDropdown'>
@@ -47,7 +47,7 @@ export function Header() {
           <button className='signInBTN'>Sign in as an owner</button>
           <button className='signInBTN learnMore'>Learn more about One Key</button>
         </div>)}
-    </div>
+    {/* </div> */}
   </header>
   );
 }
