@@ -84,19 +84,7 @@
 .Header nav {
   display: flex;
   gap: 4.375rem;
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
   align-items: center;
-}
-
-.Header nav a {
-  color: #000000;
-  cursor: pointer;
-}
-
-
-.Header nav a:hover {
-  color: var(--blue-color);
 }
 
 .appBTN {
@@ -116,7 +104,13 @@
 }
 
 .Header .signInBTN {
+  background-color: #ffffff;
   border: 0.0625rem solid var(--gray-stroke);
+}
+
+.signInBTN:hover {
+  background-color: var(--blue-color-hover);
+  border: 0.0625rem solid #00000000;
 }
 
 .signIn {

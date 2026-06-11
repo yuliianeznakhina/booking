@@ -50,18 +50,30 @@ h2 {
   font-weight: 500;
 }
 
-a {
-  text-decoration: none;
-  text-align: center;
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 button,
 a {
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   background-color: inherit;
   border: 0.0625rem solid #00000000;
   cursor: pointer;
   transition: 0.1s;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+a:hover {
+  color: var(--blue-color);
 }
 
 .signInBTN {

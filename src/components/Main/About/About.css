@@ -2,7 +2,7 @@
     background-image: url(../../../../public/images/about-image.png);
     padding: 8.75rem;
     background-size: cover;
-    background-position:  right center;
+    background-position: right center;
     border-radius: 1.625rem;
 }
 
@@ -23,9 +23,6 @@
 }
 
 .About h4 {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
     margin: 0 0 0.25rem 0;
 }
 
