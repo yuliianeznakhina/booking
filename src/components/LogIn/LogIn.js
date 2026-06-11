@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import './LogIn.css';
 
 export function LogIn(props) {
+  const [password, setPassword] = useState({ show: true, img: './images/icons/hide-password.svg' });
+  const [confirmPassword, setConfirmPassword] = useState({ show: true, img: './images/icons/hide-password.svg' });
+
   function togglePassword() {
-    let password = document.querySelector("#password");
-    if (password.type === 'password') {
-      password.type = 'text';
+    if (password.show) {
+      setPassword({ show: false, img: './images/icons/show-password.svg' });
     }
     else {
-      password.type = 'password';
+      setPassword({ show: true, img: './images/icons/hide-password.svg' });
     }
   }
+
   function toggleConfirmPassword() {
-    let password = document.querySelector("#confirmPassword");
-    if (password.type === 'password') {
-      password.type = 'text';
+    if (confirmPassword.show) {
+      setConfirmPassword({ show: false, img: './images/icons/show-password.svg' });
     }
     else {
-      password.type = 'password';
+      setConfirmPassword({ show: true, img: './images/icons/hide-password.svg' });
     }
   }
 
@@ -27,25 +30,29 @@ export function LogIn(props) {
       <h2>Sign in or log in</h2>
       <h4>Unlock a world of rewards with one account across Expedia</h4>
       <form>
-        <label htmlFor='email'>
+        <label className='textInput' htmlFor='email'>
           <img src='./images/icons/email.svg' />
           <input id='email' type='email' placeholder='Email' />
         </label>
-        <label htmlFor='password'>
+        <label className='textInput' htmlFor='password'>
           <img src='./images/icons/password.svg' />
-          <input id='password' type='password' placeholder='Password' />
-          <img onClick={togglePassword} src='./images/icons/hide-password.svg' />
+          <input id='password' type={password.show ? 'password' : 'text'} placeholder='Password' />
+          <img onClick={togglePassword} src={password.img} />
         </label>
         {props.mode == 'Signin' &&
-          <label htmlFor='confirmPassword'>
+          <label className='textInput' htmlFor='confirmPassword'>
             <img src='./images/icons/password.svg' />
-            <input id='confirmPassword' type='password' placeholder='Password' />
-            <img onClick={toggleConfirmPassword} src='./images/icons/hide-password.svg' />
+            <input id='confirmPassword' type={confirmPassword.show ? 'password' : 'text'} placeholder='Password' />
+            <img onClick={toggleConfirmPassword} src={confirmPassword.img} />
           </label>}
         {props.mode == 'Signin' &&
-          <label htmlFor='checkbox'><input type='checkbox' required /><h4>I predict the situation with <a>local residents</a> and <a>privacy policy</a></h4></label>}
+          <label htmlFor='checkbox' className='checkboxContainer'>
+            <input id='checkbox' type='checkbox' required />
+            <span class="checkmark"></span>
+            <h4>I predict the situation with <a>local residents</a> and <a>privacy policy</a></h4>
+          </label>}
         {props.mode == 'Login' &&
-          <label htmlFor='checkbox'><input type='checkbox' /><h4>Remember me</h4></label>}
+          <label htmlFor='checkbox'><input id='checkbox' type='checkbox' /><h4>Remember me</h4></label>}
         {props.mode == 'Login' &&
           <a>Forgot Password or Email?</a>}
         <Link className='signInBTN' to="/">{props.mode == 'Signin' ? "Sign up" : "Log in"}</Link>

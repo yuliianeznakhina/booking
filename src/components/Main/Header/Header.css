@@ -6,6 +6,7 @@
   padding: 1.375rem 8.125rem 2rem;
   position: sticky;
   top: 0;
+  z-index: 30;
 }
 
 #logo {
@@ -99,7 +100,7 @@
 }
 
 .appBTN:hover {
-  background-color: var(--blue-color-hover);
+  background-color: var(--blue-color-30);
   border: 0.0625rem solid #00000000;
 }
 
@@ -109,7 +110,7 @@
 }
 
 .signInBTN:hover {
-  background-color: var(--blue-color-hover);
+  background-color: var(--blue-color-30);
   border: 0.0625rem solid #00000000;
 }
 
@@ -160,7 +161,7 @@
 }
 
 .signInDropdown .signInBTN.learnMore:hover {
-  background-color: var(--blue-color-hover-alt);
+  background-color: var(--blue-color-50);
   border-color: #00000000;
   color: #ffffff;
 }

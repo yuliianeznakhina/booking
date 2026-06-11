@@ -62,6 +62,7 @@
   left: 68%;
   transform: translateX(-50%);
 }
+
 .guests-popup {
   background: #ffffff;
   border-radius: 24px;
@@ -70,6 +71,7 @@
   padding: 32px;
   box-sizing: border-box;
 }
+
 .searchBar {
   position: absolute;
   top: 100px;
@@ -100,7 +102,7 @@
   padding: 12px 20px;
   border-radius: 100px;
   background: transparent;
-  transition: background-color 0.2s ease; 
+  transition: background-color 0.2s ease;
 }
 
 
@@ -129,11 +131,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 24px; 
-  border-radius: 100px; 
+  padding: 12px 24px;
+  border-radius: 100px;
   background: transparent;
   cursor: pointer;
-  transition: background-color 0.2s ease; 
+  transition: background-color 0.2s ease;
   box-sizing: border-box;
 }
 
@@ -149,7 +151,7 @@
   z-index: 0;
 }
 
-.searchItem > * {
+.searchItem>* {
   position: relative;
   z-index: 1;
 }
@@ -199,7 +201,7 @@
   width: 100%;
   font-size: 16px;
   font-weight: 600;
-  background: transparent; 
+  background: transparent;
   color: #000;
 }
 
@@ -227,9 +229,9 @@
 .searchItem p {
   margin: 0;
   font-size: 14px;
-  font-weight: 600; 
+  font-weight: 600;
   color: #000;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 
@@ -270,7 +272,7 @@
 }
 
 .searchBtn:hover {
-  background:#28458A;
+  background: #28458A;
 
 }
 
@@ -282,14 +284,14 @@
 }
 
 .label svg {
-  width: 20px; 
+  width: 20px;
   height: 20px;
 }
 
 .heroText {
   position: absolute;
   top: 190px;
-  left: 190px;
+  left: 232px;
   z-index: 2;
   width: 430px;
   margin: 0;
@@ -335,10 +337,11 @@
   border-width: 0 2px 2px 0;
   transform: rotate(-35deg);
 }
+
 .calendarPopup {
   width: 460px;
   min-height: 330px;
-  height: auto;   
+  height: auto;
   padding: 10px;
   padding-top: 0;
   background: #FFFFFF;
@@ -348,9 +351,11 @@
   font-family: "Inner", sans-serif;
   font-weight: 500;
 }
+
 .calendarGrid {
   align-content: start;
 }
+
 .calendarHeader {
   display: flex;
   justify-content: center;
@@ -372,6 +377,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .weekdays,
 .calendarGrid {
   display: grid;
@@ -402,7 +408,8 @@
 }
 
 .day.selected {
-  background: #4f46e5; /* цвет выбранной даты */
+  background: #4f46e5;
+  /* цвет выбранной даты */
   color: white;
 }
 
@@ -534,7 +541,8 @@
 }
 
 .done-btn {
-  background-color: #1a237e; /* Matches the deep blue button color */
+  background-color: #1a237e;
+  /* Matches the deep blue button color */
   color: #ffffff;
   border: none;
   border-radius: 20px;

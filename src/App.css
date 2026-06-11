@@ -8,15 +8,15 @@ html {
   inherits: true;
 }
 
-@property --blue-color-hover {
+@property --blue-color-30 {
   syntax: "<color>";
-  initial-value: #1c28cc4d;
+  initial-value: #1c27ca4d;
   inherits: true;
 }
 
-@property --blue-color-hover-alt {
+@property --blue-color-hover-50 {
   syntax: "<color>";
-  initial-value: #1c28cc80;
+  initial-value: #1c27ca80;
   inherits: true;
 }
 
