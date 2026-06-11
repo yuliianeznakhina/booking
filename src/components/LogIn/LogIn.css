@@ -1,1 +1,13 @@
-.LogIn {}
+.wrap {
+    background-image: url(../../../public/images/login-bg.png);
+    background-blend-mode: lighten;
+    background-color: #ffffff52;
+    padding: 2rem;
+}
+
+.LogIn,
+.LogIn form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
