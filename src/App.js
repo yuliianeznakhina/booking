@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createContext, useState, useEffect } from 'react';
-import { Header } from './components/Header/Header';
 import { Main } from './components/Main/Main';
 import { LogIn } from './components/LogIn/LogIn'
 import './App.css';
@@ -9,10 +8,9 @@ export const LayoutContext = createContext();
 export const SelectedFilterContext = createContext();
 
 function App() {
-  
+
   return (
     <Router className="App">
-      <Header />
 
       <Routes>
         <Route path="/" element={<Main />} />
@@ -20,7 +18,6 @@ function App() {
         <Route path="/Login" element={<LogIn mode='Login' />} />
       </Routes>
 
-      {/* <Footer /> */}
     </Router>
   );
 }
