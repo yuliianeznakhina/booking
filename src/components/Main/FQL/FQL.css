@@ -1,12 +1,12 @@
 .FQL {
-  max-width: 1200px ;
-  margin: 0 auto;
-  padding: 20px;
+  /* max-width: 1200px ; */
+  /* margin: 0 auto; */
+  padding: 20px 0;
   font-family: Arial, sans-serif;
 }
 
 .fql-title {
-    text-align: left;
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -20,7 +20,8 @@
 
 /* Элемент списка с красивой линией, как на картинке */
 .fql-item {
-  border-bottom: 2px solid #7c83b3; /* Цвет линии близок к макету */
+  border-bottom: 2px solid #7c83b3;
+  /* Цвет линии близок к макету */
 }
 
 /* Кнопка-обертка для вопроса */
@@ -45,7 +46,8 @@
 
 /* Плавный поворот твоей SVG стрелочки */
 .fql-arrow {
-  width: 18px; /* Уменьшаем пропорционально для аккуратности, либо убери это свойство */
+  width: 18px;
+  /* Уменьшаем пропорционально для аккуратности, либо убери это свойство */
   height: auto;
   transition: transform 0.25s ease-in-out;
   flex-shrink: 0;
@@ -66,12 +68,13 @@
 
 /* Когда добавлен класс .show, плавно даем высоту блоку */
 .fql-content-wrapper.show {
-  max-height: 200px; /* Запас высоты для текста ответа */
+  max-height: 200px;
+  /* Запас высоты для текста ответа */
 }
 
 /* Внутренний блок ответа для правильных отступов */
 .fql-answer {
-    text-align: left;
+  text-align: left;
   padding-bottom: 20px;
   font-size: 15px;
   line-height: 1.6;
