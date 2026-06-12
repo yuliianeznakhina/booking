@@ -1,15 +1,25 @@
-.wrap {
+.loginWrap {
     background-image: url(../../../public/images/login-bg.png);
     background-blend-mode: lighten;
     background-color: #ffffff52;
     padding: 2rem;
 }
 
+.loginCenter {
+    display: flex;
+    justify-content: center;
+}
+
 .LogIn,
 .LogIn form {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+}
+
+.LogIn form {
+    width: 100%;
 }
 
 .backBTN {
@@ -29,11 +39,13 @@
 
 .LogIn {
     padding: 0.5rem 0;
+    gap: 1.875rem;
+    text-align: center;
 }
 
 .LogIn h2 {
     font-weight: 600;
-    margin: 0.625rem 0;
+    margin: 0;
 }
 
 .LogIn h4 {
@@ -42,6 +54,9 @@
     font-weight: 400;
 }
 
+.loginTitle h4 {
+    margin: 0.625rem 0;
+}
 
 .LogIn form {
     gap: 2.5rem;
@@ -52,6 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .LogIn .textInput {
@@ -82,4 +98,87 @@
 .checkboxcontainer {
     display: block;
     position: relative;
+}
+
+.loginCheckbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.LogIn .signInBTN,
+.altLogin {
+    background-color: var(--blue-color);
+    color: #ffffff;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.LogIn .signInBTN:hover {
+    background-color: #1D2152;
+}
+
+.altLogin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.75rem;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    font-weight: 500;
+    border: 2px solid var(--gray-stroke);
+}
+
+.altLogin:hover {
+    background-color: var(--blue-color-70);
+    border-color: #00000000;
+}
+
+.altLogin span {
+    width: 100%;
+}
+
+.LogIn .link {
+    opacity: 1;
+}
+
+.LogIn .link a {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--blue-color);
+}
+
+.LogIn .link h4 {
+    color: var(--blue-color);
+    opacity: 1;
+}
+
+.LogIn .link a:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    box-sizing: border-box;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 6px;
+    padding: 0;
+    border: 2px solid var(--blue-color);
+    appearance: none;
+    background-color: white;
+    outline: none;
+    transition: outline 0.1s;
+}
+
+input[type="checkbox"]:checked {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--blue-color);
+    background-image: url(../../../public/images/icons/checkmark.svg);
 }

@@ -14,9 +14,15 @@ html {
   inherits: true;
 }
 
-@property --blue-color-hover-50 {
+@property --blue-color-50 {
   syntax: "<color>";
   initial-value: #1c27ca80;
+  inherits: true;
+}
+
+@property --blue-color-70 {
+  syntax: "<color>";
+  initial-value: #1c27cab3;
   inherits: true;
 }
 
