@@ -90,6 +90,6 @@ a:hover {
 }
 
 .signInBTN:hover {
-  background-color: var(--blue-color-hover);
+  background-color: var(--blue-color-30);
   border: 0.0625rem solid #00000000;
 }
