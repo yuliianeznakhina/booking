@@ -1,8 +1,8 @@
 .place-container {
   padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
 }
 
 .place-container h2 {
@@ -164,11 +164,13 @@
 .card-price span::before {
   content: '';
 }
+
 .card-main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 /* ── Адаптив ── */
 @media (max-width: 900px) {
   .cards-grid {
