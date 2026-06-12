@@ -42,7 +42,7 @@ const FQL = () => {
   };
 
   return (
-    <div className="FQL">
+    <div id="FQL">
       <h2 className="fql-title">Help Center</h2>
 
       <div className="fql-list">

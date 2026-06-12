@@ -24,7 +24,7 @@ export function Header(props) {
   }
 
   return (<header className="Header">
-    <img id='logo' src='./images/LOGO.svg' alt='logo' />
+    <Link to='/' href='#About'><img id='logo' src='./images/LOGO.svg' alt='logo' /></Link>
     <div className='wrapper'>
       <div id='countrySelect'>
         <div className='countrySelected' onClick={() => setCountryOpen(!countryOpen)}> <img src={selected.image} />{selected.name}<img className={'dropdownArrow' + (countryOpen ? ' open' : '')} src='./images/icons/arrow-down.png' /></div>
@@ -42,10 +42,11 @@ export function Header(props) {
       <div className='navigation'>
         <button className='appBTN'>Open app<img src='./images/icons/open-app.png' /></button>
         <nav>
-          <a>Trip Boards</a>
-          <a>List your property</a>
-          <a>Help</a>
-          <a>My trips</a>
+          <a href='#'>Trip Boards</a>
+          <a href='#About'>Why us</a>
+          <a href='#FQL'>Help</a>
+          <Link to='/'>My place</Link>
+          <a href='#Footer'>Contacts</a>
         </nav>
         <div className='signIn'>
           <button className='signInBTN' onClick={() => setSignInOpen(!signInOpen)}>Sign in</button>
@@ -55,7 +56,7 @@ export function Header(props) {
                 track of all your messages</h4>
               <Link className='signInBTN' to="/Signin">Sign in</Link>
               <Link className='signInBTN' to="/Signin">Sign in as an owner</Link>
-              <Link className='signInBTN learnMore' to="/">Learn more about One Key</Link>
+              <Link className='signInBTN learnMore' to="/MoreAboutOneKey">Learn more about One Key</Link>
             </div>)}
         </div>
       </div>

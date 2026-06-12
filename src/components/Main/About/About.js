@@ -1,7 +1,7 @@
 import './About.css';
 
 export function About() {
-  return (<section className="About">
+  return (<section id="About">
     <h2>Why Book With Us?</h2>
     <div className='AboutInformation'>
       <ul>
