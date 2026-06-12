@@ -39,6 +39,12 @@ export function Header(props) {
             </div>))}
           </div>)}
       </div>
+      <input type="checkbox" id="menuCheckbox" />
+      <label id='mobileMenu' htmlFor='menuCheckbox'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <div className='navigation'>
         <button className='appBTN'>Open app<img src='./images/icons/open-app.png' /></button>
         <nav>
@@ -59,13 +65,6 @@ export function Header(props) {
               <Link className='signInBTN learnMore' to="/MoreAboutOneKey">Learn more about One Key</Link>
             </div>)}
         </div>
-      </div>
-      <div className='mobileMenu'>
-        <input type="checkbox" id="menuCheckbox" />
-
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
     </div>
   </header>
