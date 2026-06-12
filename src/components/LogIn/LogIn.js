@@ -32,20 +32,20 @@ export function LogIn(props) {
           <h2>Sign in or log in</h2>
           <h4>Unlock a world of rewards with one account across Expedia</h4>
         </div>
-        <form>
+        <form action='/'>
           <label className='textInput' htmlFor='email'>
             <img src='./images/icons/email.svg' />
-            <input id='email' type='email' placeholder='Email' />
+            <input id='email' type='email' placeholder='Email' required />
           </label>
           <label className='textInput' htmlFor='password'>
             <img src='./images/icons/password.svg' />
-            <input id='password' type={password.show ? 'password' : 'text'} placeholder='Password' />
+            <input id='password' type={password.show ? 'password' : 'text'} placeholder='Password' required />
             <img onClick={togglePassword} src={password.img} />
           </label>
           {props.mode == 'Signin' &&
             <label className='textInput' htmlFor='confirmPassword'>
               <img src='./images/icons/password.svg' />
-              <input id='confirmPassword' type={confirmPassword.show ? 'password' : 'text'} placeholder='Password' />
+              <input id='confirmPassword' type={confirmPassword.show ? 'password' : 'text'} placeholder='Password' required />
               <img onClick={toggleConfirmPassword} src={confirmPassword.img} />
             </label>}
           {props.mode == 'Signin' &&
@@ -61,7 +61,7 @@ export function LogIn(props) {
               <a>Forgot Password or Email?</a>
             </span>}
 
-          <Link className='signInBTN' to="/">{props.mode == 'Signin' ? "Sign up" : "Log in"}</Link>
+          <button className='signInBTN' to="/">{props.mode == 'Signin' ? "Sign up" : "Log in"}</button>
         </form>
         <h4>Other ways to log in</h4>
         <button className='altLogin'><img src='./images/icons/google-logo.svg' /><span>Continue with google</span></button>

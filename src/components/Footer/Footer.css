@@ -23,6 +23,7 @@
 
 .footer-logo {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .footer-logo svg {

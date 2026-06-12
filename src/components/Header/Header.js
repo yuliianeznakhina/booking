@@ -24,7 +24,7 @@ export function Header(props) {
   }
 
   return (<header className="Header">
-    <Link to='/' href='#About'><img id='logo' src='./images/LOGO.svg' alt='logo' /></Link>
+    <Link to='/'><img id='logo' src='./images/LOGO.svg' alt='logo' /></Link>
     <div className='wrapper'>
       <div id='countrySelect'>
         <div className='countrySelected' onClick={() => setCountryOpen(!countryOpen)}> <img src={selected.image} />{selected.name}<img className={'dropdownArrow' + (countryOpen ? ' open' : '')} src='./images/icons/arrow-down.png' /></div>
