@@ -165,3 +165,46 @@
   border-color: #00000000;
   color: #ffffff;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Header {
+    padding: 1.375rem 2rem 2rem;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Header {
+    padding: 1.375rem 2rem 2rem;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Header {
+    padding: 1.375rem 2rem 2rem;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Header {
+    padding: 1.375rem 2rem 2rem;
+  }
+
+  .Header .navigation,
+  .Header nav {
+    gap: 2.1875rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width:1919) {
+  .Header {
+    padding: 1.375rem 2rem 2rem;
+  }
+
+  .Header .navigation,
+  .Header nav {
+    gap: 2.1875rem;
+  }
+}

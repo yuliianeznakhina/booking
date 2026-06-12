@@ -60,6 +60,13 @@ export function Header(props) {
             </div>)}
         </div>
       </div>
+      <div className='mobileMenu'>
+        <input type="checkbox" id="menuCheckbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
   );
