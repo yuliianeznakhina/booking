@@ -173,14 +173,20 @@
 #mobileMenu span {
   display: block;
   width: 3rem;
-  height: 4px;
-  margin-bottom: 5px;
+  height: 0.3rem;
   position: relative;
 
   background: #000000;
-  border-radius: 3px;
+  border-radius: 0.125rem;
 }
 
+#menuCheckbox {
+  display: none;
+  position: relative;
+  left: 5rem;
+  width: 3rem;
+  height: 1.8rem;
+}
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .Header {
@@ -188,7 +194,11 @@
   }
 
   #mobileMenu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    
+    cursor: pointer;
   }
 
   .navigation {
@@ -214,6 +224,11 @@
   #mobileMenu,
   #menuCheckbox {
     z-index: 3;
+  }
+
+  #menuCheckbox {
+    display: block;
+    visibility: hidden;
   }
 }
 
