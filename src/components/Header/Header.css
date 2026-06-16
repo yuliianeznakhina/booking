@@ -178,6 +178,7 @@
 
   background: #000000;
   border-radius: 0.125rem;
+  transition: 0.1s;
 }
 
 #menuCheckbox {
@@ -197,28 +198,48 @@
     display: flex;
     flex-direction: column;
     gap: 0.45rem;
-    
+
     cursor: pointer;
   }
 
   .navigation {
     display: none;
     position: absolute;
-    background-color: #c0c0c0;
+    background-color: #ffffff;
     z-index: 2;
     opacity: 0;
     width: 100%;
+    right: 0;
+    top: 0;
+    padding: 7rem 0 4.25rem;
   }
 
   .navigation nav {
     flex-direction: column;
+    gap: 2.25rem;
+  }
 
+  #menuCheckbox:checked~#mobileMenu span:first-child {
+    transform: rotate(45deg) translateX(0.5rem) translateY(0.5rem);
+  }
+
+  #menuCheckbox:checked~#mobileMenu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menuCheckbox:checked~#mobileMenu span:last-child {
+    transform: rotate(-45deg) translateX(0.5rem) translateY(-0.5rem);
   }
 
   #menuCheckbox:checked~.navigation {
     display: flex;
     flex-direction: column;
     opacity: 1;
+    gap: 2.25rem;
+  }
+
+  #menuCheckbox:checked~.navigation .appBTN {
+    display: none;
   }
 
   #mobileMenu,

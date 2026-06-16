@@ -10,14 +10,14 @@ import Footer from '../Footer/Footer';
 export function Main() {
   return (<>
     <Header />
-    {/* <Find />
+    <Find />
     <div className="Main">
       <Place />
       <About />
       <SignInBanner />
       <FQL />
     </div>
-    <Footer /> */}
+    <Footer />
   </>
   );
 }
