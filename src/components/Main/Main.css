@@ -4,3 +4,9 @@
     flex-direction: column;
     gap: 1.875rem;
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .Main {
+        padding: 0 2rem;
+    }
+}

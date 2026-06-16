@@ -150,6 +150,9 @@ const categories = [
 const Place = () => {
   const [activeCategory, setActiveCategory] = useState('beach');
   const currentPlaces = placesData[activeCategory] || [];
+  const places1 = placesData.slice(placesData.count / 2);
+  const places2 = placesData.slice(placesData.count / 2);
+
 
   return (
     <div className="place-container">
