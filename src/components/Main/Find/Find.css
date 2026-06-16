@@ -579,13 +579,16 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width:1919px) {
   .searchBar {
-    left: calc((100vw - 100%) / 2);
     display: flex;
-    width: auto;
+    width: calc(100% - 181px*2);
     height: auto;
     top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14px;
   }
 
   .searchItem {
@@ -596,10 +599,6 @@
   .searchBtn {
     position: static;
   }
-}
 
-@media (min-width: 1441px) and (max-width:1919px) {
-  .searchBar {
-    left: calc((100vw - 1519px) / 2);
-  }
+
 }
