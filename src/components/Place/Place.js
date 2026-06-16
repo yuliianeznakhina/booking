@@ -149,10 +149,8 @@ const categories = [
 
 const Place = () => {
   const [activeCategory, setActiveCategory] = useState('beach');
-  const currentPlaces = placesData[activeCategory] || [];
-  const places1 = placesData.slice(placesData.count / 2);
-  const places2 = placesData.slice(placesData.count / 2);
-
+  const currentPlaces1 = placesData[activeCategory].slice(0, placesData[activeCategory].length / 2) || [];
+  const currentPlaces2 = placesData[activeCategory].slice(placesData[activeCategory].length / 2) || [];
 
   return (
     <div className="place-container">
@@ -172,26 +170,47 @@ const Place = () => {
           </button>
         ))}
       </div>
-
-      <div className="cards-grid">
-        {currentPlaces.map((place) => (
-          <div key={place.id} className="card">
-            <div className="card-image-wrapper">
-              <img src={place.img} alt={place.title} className="card-img" />
-              <Link to='/InformationPage' className="view-more-btn">View more</Link>
-            </div>
-            <div className="card-info">
-              <div className="card-main">
-                <h3>{place.title}</h3>
-                <p className="bedrooms">{place.bedrooms} bedrooms</p>
-                <span className="rating-badge">{place.rating}</span>
+      <div className='cards-wrapper'>
+        <div className="cards-grid">
+          {currentPlaces1.map((place) => (
+            <div key={place.id} className="card">
+              <div className="card-image-wrapper">
+                <img src={place.img} alt={place.title} className="card-img" />
+                <Link to='/InformationPage' className="view-more-btn">View more</Link>
               </div>
-              <div className="card-price">
-                <span>${place.price}</span>
+              <div className="card-info">
+                <div className="card-main">
+                  <h3>{place.title}</h3>
+                  <p className="bedrooms">{place.bedrooms} bedrooms</p>
+                  <span className="rating-badge">{place.rating}</span>
+                </div>
+                <div className="card-price">
+                  <span>${place.price}</span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="cards-grid">
+          {currentPlaces2.map((place) => (
+            <div key={place.id} className="card">
+              <div className="card-image-wrapper">
+                <img src={place.img} alt={place.title} className="card-img" />
+                <Link to='/InformationPage' className="view-more-btn">View more</Link>
+              </div>
+              <div className="card-info">
+                <div className="card-main">
+                  <h3>{place.title}</h3>
+                  <p className="bedrooms">{place.bedrooms} bedrooms</p>
+                  <span className="rating-badge">{place.rating}</span>
+                </div>
+                <div className="card-price">
+                  <span>${place.price}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

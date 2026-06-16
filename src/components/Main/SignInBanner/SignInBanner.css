@@ -30,3 +30,25 @@
     font-weight: 500;
     margin: 0 1.5rem;
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    .SignInBanner,
+    .bannerWrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SignInBanner {
+        gap: 1.25rem;
+    }
+
+    .bannerWrapper {
+        gap: 0.875rem;
+    }
+
+    .SignInBanner h3 {
+        text-align: center;
+    }
+}
