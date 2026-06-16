@@ -1,3 +1,7 @@
+.loginWrap .Header {
+    display: none;
+}
+
 .loginWrap {
     background-image: url(../../../public/images/login-bg.png);
     background-blend-mode: lighten;
@@ -187,3 +191,87 @@ input[type="checkbox"]:checked {
     border-color: var(--blue-color);
     background-image: url(../../../public/images/icons/checkmark.svg);
 }
+
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .loginWrap {
+        padding-top: 0;
+    }
+
+    .loginWrap .Header {
+        display: flex;
+        background-color: #00000000;
+        height: 11rem;
+        padding: 4.5rem 0 3.7rem;
+    }
+
+    .Header a {
+        height: 100%;
+    }
+
+    .Header #logo {
+        height: 100%;
+        width: auto;
+    }
+
+    .navigation {
+        background-color: #8FBAE2;
+        margin: 0 -2rem;
+        width: calc(100% + 4rem);
+        left: 0;
+    }
+
+    .backBTN {
+        display: none;
+    }
+
+    #countrySelect {
+        display: none;
+    }
+
+    .LogIn h2 {
+        font-size: 2rem;
+    }
+
+    .loginTitle h4 {
+        font-size: 0.875rem;
+    }
+
+    .LogIn .textInput {
+        height: 3.625rem;
+        padding: 0.8rem;
+        gap: 0.313rem;
+    }
+
+    .LogIn .textInput img {
+        height: 100%;
+    }
+
+    .LogIn .textInput input {
+        font-size: 1rem;
+    }
+
+    .LogIn #checkbox {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .LogIn h4,
+    .LogIn .link a {
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    .altLogin {
+        font-size: 1rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+
+    .altLogin img {
+        width: 1.375rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1919px) {}
