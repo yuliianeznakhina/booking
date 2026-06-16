@@ -556,3 +556,50 @@
 .done-btn:hover {
   background-color: #0d1b60;
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    top: 150px;
+  }
+
+  .searchItem {
+    position: static;
+  }
+
+  .searchBtn {
+    position: static;
+  }
+
+  .heroText {
+    top: 46px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .searchBar {
+    left: calc((100vw - 100%) / 2);
+    display: flex;
+    width: auto;
+    height: auto;
+    top: 150px;
+  }
+
+  .searchItem {
+    position: static;
+    width: auto;
+  }
+
+  .searchBtn {
+    position: static;
+  }
+}
+
+@media (min-width: 1441px) and (max-width:1919px) {
+  .searchBar {
+    left: calc((100vw - 1519px) / 2);
+  }
+}
