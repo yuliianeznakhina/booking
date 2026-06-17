@@ -190,6 +190,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
+  .signInDropdown {
+    right: calc((100% - 26rem)/2);
+  }
+
   .Header {
     padding: 1.375rem 2rem 2rem;
   }

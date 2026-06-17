@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./InformationPage.css";
 import { Calendar, GuestsPopup } from "../Main/Find/Find";
 import { Header } from '../Header/Header';
-import Footer from '../Footer/Footer';
+import { Footer } from '../Footer/Footer';
 
 export default function InformationPage() {
   const [activeBookingMenu, setActiveBookingMenu] = useState(null);

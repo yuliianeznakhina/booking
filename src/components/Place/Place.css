@@ -19,6 +19,11 @@
   gap: 44px;
   margin-bottom: 30px;
   padding-bottom: 0;
+  overflow: scroll;
+}
+
+.categories-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tab-btn {

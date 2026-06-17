@@ -5,7 +5,7 @@ import Place from "../Place/Place";
 import { About } from './About/About';
 import { SignInBanner } from './SignInBanner/SignInBanner';
 import FQL from './FQL/FQL';
-import Footer from '../Footer/Footer';
+import { Footer } from '../Footer/Footer';
 
 export function Main() {
   return (<>

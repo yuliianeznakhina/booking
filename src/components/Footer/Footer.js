@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-const Footer = () => (
-  <footer id="Footer">
+export function Footer() {
+  const [signInOpen, setSignInOpen] = useState(false);
+  return (<footer id="Footer">
     <div className="footer-main">
       <div onClick={scrollToTop} className="footer-logo">
         <svg width="180" height="52" viewBox="0 0 242 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,13 +46,20 @@ const Footer = () => (
           <Link to='/'>My place</Link>
           <a href='#Footer'>Contacts</a>
         </nav>
-        <button className="footer-signin-btn">Sign in</button>
+        <button className='footer-signin-btn' onClick={() => setSignInOpen(!signInOpen)}>Sign in</button>
+        {signInOpen && (
+          <div className='signInDropdown'>
+            <h4>Sign in to contact hosts and keep
+              track of all your messages</h4>
+            <Link className='signInBTN' to="/Signin">Sign in</Link>
+            <Link className='signInBTN' to="/Signin">Sign in as an owner</Link>
+            <Link className='signInBTN learnMore' to="/MoreAboutOneKey">Learn more about One Key</Link>
+          </div>)}
       </div>
     </div>
     <div className="footer-bottom">
       <p>© 2026 Entrio, Inc. • Privacy Policy • Terms of Service • UK Site Map</p>
     </div>
   </footer>
-);
-
-export default Footer;
+  );
+}
