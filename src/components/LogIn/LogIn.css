@@ -205,16 +205,16 @@ input[type="checkbox"]:checked {
         padding: 4.5rem 0 3.7rem;
     }
 
-    .Header a {
+    .loginWrap .Header a {
         height: 100%;
     }
 
-    .Header #logo {
+    .loginWrap .Header #logo {
         height: 100%;
         width: auto;
     }
 
-    .navigation {
+    .loginWrap .navigation {
         background-color: #8FBAE2;
         margin: 0 -2rem;
         width: calc(100% + 4rem);
@@ -225,7 +225,7 @@ input[type="checkbox"]:checked {
         display: none;
     }
 
-    #countrySelect {
+    .loginWrap #countrySelect {
         display: none;
     }
 
